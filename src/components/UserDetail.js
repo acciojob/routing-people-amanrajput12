@@ -9,7 +9,8 @@ const UserDetail = () => {
     })
   return (
     <div>
-      { !detail ? <div>Loading</div>:<div>
+      { !detail ? <div>Loading...</div>:<div>
+        <h1>User Details</h1>
         <p><strong>Name: </strong>{detail.name}</p>
         <p><strong>Username: </strong>{detail.username}</p>
         <p><strong>Email: </strong>{detail.email}</p>

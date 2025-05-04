@@ -9,7 +9,7 @@ const App = () => {
     <div>
         {/* Do not remove the main div */}
         {/* <UserList/> */}
-        <h2>Hello</h2>
+      
         <Routes>
           <Route path="/" element={<UserList/>} />
           <Route path="/users/:id" element={<UserDetail/>}/>
