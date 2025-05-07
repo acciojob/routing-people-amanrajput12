@@ -12,7 +12,7 @@ const UserList = () => {
   
   return (
     <div>
-        <h1>Userlist</h1>
+        <h1>User List</h1>
        <ul>{user.map((data)=><li key={data.id}>
             <Link to={`/users/${data.id}`}>{data.name}</Link>
             {/* {data.name} */}

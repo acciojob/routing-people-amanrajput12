@@ -4,6 +4,6 @@ import App from "./components/App";
 import {BrowserRouter} from "react-router-dom"
 
 
-ReactDOM.render(<BrowserRouter>
+ReactDOM.render(
 <App />
-</BrowserRouter>, document.getElementById("root"));
+, document.getElementById("root"));

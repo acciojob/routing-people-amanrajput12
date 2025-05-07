@@ -3,10 +3,11 @@ import {useParams} from "react-router-dom"
 const UserDetail = () => {
     const {id} = useParams();
     const [detail,setDetail] = useState("")
+    console.log("id ",id)
 
     useEffect(()=>{
         fetch(`https://jsonplaceholder.typicode.com/users/${id}`).then(data=>data.json()).then(resp=>setDetail(resp))
-    })
+    },[id])
   return (
     <div>
       { !detail ? <div>Loading...</div>:<div>
