@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {useParams} from "react-router-dom"
 const UserDetail = () => {
     const {id} = useParams();
-    const [detail,setDetail] = useState("")
+    const [detail,setDetail] = useState(null)
     console.log("id ",id)
 
     useEffect(()=>{
